@@ -1,9 +1,11 @@
+#开启所有监控端点
 management:
   endpoints:
     web:
       exposure:
         include: "*"
 
+#配置Druid数据源
 spring:
   datasource:
     username: root
@@ -26,9 +28,11 @@ spring:
     useGlobalDataSourceStat: true
     connectionProperties: druid.stat.mergeSql=true;druid.stat.slowSqlMillis=500
 
+#配置Mybatis的Mapper映射文件路径
 mybatis:
   mapper-locations: classpath*:mybatis/mapper/*.xml
 
+#配置dubbo服务注册地址以及要注册的服务所在的包路径,并设置5s超时
 dubbo:
   application:
     name: mallService
@@ -36,3 +40,5 @@ dubbo:
     address: zookeeper://112.74.185.88:2181
   scan:
     base-packages: com.scau.mall.service
+  consumer:
+    timeout: 5000
