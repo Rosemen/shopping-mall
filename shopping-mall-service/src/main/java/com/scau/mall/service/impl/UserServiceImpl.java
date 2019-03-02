@@ -2,6 +2,7 @@ package com.scau.mall.service.impl;
 
 import com.alibaba.dubbo.config.annotation.Service;
 import com.github.pagehelper.PageHelper;
+import com.github.pagehelper.PageInfo;
 import com.scau.mall.entity.User;
 import com.scau.mall.mapper.UserMapper;
 import com.scau.mall.service.UserService;
@@ -32,9 +33,10 @@ public class UserServiceImpl implements UserService {
     }
 
     @Override
-    public List<User> list() {
-        /*PageHelper.startPage(0,4);*/
+    public PageInfo<User> list() {
+        PageHelper.startPage(0,3);
         List<User> userList = userMapper.list();
-        return userList;
+        PageInfo<User> pageInfo = new PageInfo<>(userList);
+        return pageInfo;
     }
 }

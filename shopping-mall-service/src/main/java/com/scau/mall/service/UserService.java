@@ -1,5 +1,6 @@
 package com.scau.mall.service;
 
+import com.github.pagehelper.PageInfo;
 import com.scau.mall.entity.User;
 
 import java.util.List;
@@ -19,5 +20,5 @@ public interface UserService {
       */
      User get(String username);
 
-     List<User> list();
+     PageInfo<User> list();
 }
