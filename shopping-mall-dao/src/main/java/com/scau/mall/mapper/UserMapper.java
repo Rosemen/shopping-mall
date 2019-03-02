@@ -2,6 +2,9 @@ package com.scau.mall.mapper;
 
 
 import com.scau.mall.entity.User;
+
+import java.util.List;
+
 /**
  * UserMapper:用户操作数据库接口
  *
@@ -16,4 +19,6 @@ public interface UserMapper {
      * @return User
      */
     User get(String username);
+
+    List<User> list();
 }

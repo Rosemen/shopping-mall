@@ -13,9 +13,10 @@
     <artifactId>shopping-mall-service</artifactId>
 
     <properties>
-       <dubbo.version>0.2.0</dubbo.version>
-       <zookeeper.version>3.4.13</zookeeper.version>
-       <zookeeper.client.version>2.12.0</zookeeper.client.version>
+        <dubbo.version>0.2.0</dubbo.version>
+        <zookeeper.version>3.4.13</zookeeper.version>
+        <zookeeper.client.version>2.12.0</zookeeper.client.version>
+        <pageHelper.version>1.2.10</pageHelper.version>
     </properties>
 
     <dependencies>
@@ -51,6 +52,12 @@
             <artifactId>zookeeper</artifactId>
             <version>${zookeeper.version}</version>
             <type>pom</type>
+        </dependency>
+        <!-- mybatis分页插件 -->
+        <dependency>
+            <groupId>com.github.pagehelper</groupId>
+            <artifactId>pagehelper-spring-boot-starter</artifactId>
+            <version>${pageHelper.version}</version>
         </dependency>
     </dependencies>
 </project>

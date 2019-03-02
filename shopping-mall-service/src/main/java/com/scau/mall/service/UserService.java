@@ -1,6 +1,9 @@
 package com.scau.mall.service;
 
 import com.scau.mall.entity.User;
+
+import java.util.List;
+
 /**
  * UserService:用户业务接口
  *
@@ -15,4 +18,6 @@ public interface UserService {
       * @return User
       */
      User get(String username);
+
+     List<User> list();
 }

@@ -1,26 +1,25 @@
 package com.scau.mall.entity;
 
 import lombok.Data;
-import lombok.Getter;
-import lombok.Setter;
-import lombok.ToString;
 
 import java.io.Serializable;
 import java.util.Date;
 
 @Data
-public class User implements Serializable {
+public class ItemCat implements Serializable {
     private static final long serialVersionUID = 1L;
 
     private Long id;
 
-    private String username;
+    private Long parentId;
 
-    private String password;
+    private String name;
 
-    private String phone;
+    private Integer status;
 
-    private String email;
+    private Integer sortOrder;
+
+    private Boolean isParent;
 
     private Date created;
 
