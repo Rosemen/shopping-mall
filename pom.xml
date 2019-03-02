@@ -6,8 +6,9 @@
     <modules>
         <module>shopping-mall-api</module>
         <module>shopping-mall-dao</module>
+        <module>shopping-mall-service-interface</module>
+        <module>shopping-mall-service-implement</module>
         <module>shopping-mall-web</module>
-        <module>shopping-mall-service</module>
     </modules>
     <parent>
         <groupId>org.springframework.boot</groupId>

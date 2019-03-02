@@ -5,6 +5,12 @@ import lombok.Data;
 import java.io.Serializable;
 import java.util.Date;
 
+/**
+ * OrderShipping: 订单详情
+ *
+ * @author chen
+ * @date 2019/03/02
+ */
 @Data
 public class OrderShipping implements Serializable {
     private static final long serialVersionUID = 1L;

@@ -20,5 +20,10 @@ public interface UserMapper {
      */
     User get(String username);
 
+    /**
+     * 从数据库中查询所有用户
+     *
+     * @return List<User>
+     */
     List<User> list();
 }

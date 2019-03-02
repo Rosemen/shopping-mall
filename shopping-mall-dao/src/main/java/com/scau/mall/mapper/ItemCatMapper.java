@@ -3,6 +3,12 @@ package com.scau.mall.mapper;
 
 import com.scau.mall.entity.ItemCat;
 
+/**
+ * ItemCatMapper
+ *
+ * @author chen
+ * @date 2019/03/02
+ */
 public interface ItemCatMapper {
     int deleteByPrimaryKey(Long id);
 

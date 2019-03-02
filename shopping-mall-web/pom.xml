@@ -16,7 +16,6 @@
         <dubbo.version>0.2.0</dubbo.version>
         <zookeeper.version>3.4.13</zookeeper.version>
         <zookeeper.client.version>2.12.0</zookeeper.client.version>
-        <pageHelper.version>5.1.8</pageHelper.version>
     </properties>
 
     <dependencies>
@@ -52,14 +51,10 @@
             <version>${zookeeper.version}</version>
             <type>pom</type>
         </dependency>
-        <dependency>
-            <groupId>com.github.pagehelper</groupId>
-            <artifactId>pagehelper</artifactId>
-            <version>${pageHelper.version}</version>
-        </dependency>
+        <!-- 引入service接口 -->
         <dependency>
             <groupId>com.scau</groupId>
-            <artifactId>shopping-mall-api</artifactId>
+            <artifactId>shopping-mall-service-interface</artifactId>
             <version>1.0-SNAPSHOT</version>
         </dependency>
     </dependencies>

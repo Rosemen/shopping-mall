@@ -8,6 +8,12 @@ import lombok.ToString;
 import java.io.Serializable;
 import java.util.Date;
 
+/**
+ * User:用户实体类
+ *
+ * @author chen
+ * @date 2019/03/02
+ */
 @Data
 public class User implements Serializable {
     private static final long serialVersionUID = 1L;

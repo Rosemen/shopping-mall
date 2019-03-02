@@ -3,8 +3,6 @@ package com.scau.mall.service;
 import com.github.pagehelper.PageInfo;
 import com.scau.mall.entity.User;
 
-import java.util.List;
-
 /**
  * UserService:用户业务接口
  *
@@ -20,5 +18,10 @@ public interface UserService {
       */
      User get(String username);
 
+     /**
+      * 分页查询所有用户
+      *
+      * @return PageInfo<User>
+      */
      PageInfo<User> list();
 }

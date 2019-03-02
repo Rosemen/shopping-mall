@@ -10,8 +10,7 @@
     <modelVersion>4.0.0</modelVersion>
     <packaging>war</packaging>
 
-    <artifactId>shopping-mall-service</artifactId>
-
+    <artifactId>shopping-mall-service-implement</artifactId>
     <properties>
         <dubbo.version>0.2.0</dubbo.version>
         <zookeeper.version>3.4.13</zookeeper.version>
@@ -59,5 +58,18 @@
             <artifactId>pagehelper-spring-boot-starter</artifactId>
             <version>${pageHelper.version}</version>
         </dependency>
+        <!-- 引入service接口 -->
+        <dependency>
+            <groupId>com.scau</groupId>
+            <artifactId>shopping-mall-service-interface</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
+        <!-- 引入Dao接口 -->
+        <dependency>
+            <groupId>com.scau</groupId>
+            <artifactId>shopping-mall-dao</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
     </dependencies>
+
 </project>
