@@ -31,4 +31,9 @@ public class UserController {
         PageInfo<User> pageInfo = userService.list();
         return pageInfo;
     }
+    
+    @RequestMapping(value="/hello")
+    public String hello() {
+    	return "hello";
+    }
 }
