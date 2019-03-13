@@ -31,4 +31,9 @@ public class UserController {
         PageInfo<User> pageInfo = userService.list();
         return pageInfo;
     }
+    
+    @RequestMapping(value="/testComflick")
+    public String comflick() {
+    	return "abc";
+    }
 }
